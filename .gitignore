@@ -1,2 +1,2 @@
-locallibrary/catalog/__pycache__
-locallibrary/locallibrary/__pycache__
+__pycache__
+*.pyc

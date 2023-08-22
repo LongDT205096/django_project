@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-28 10:35+0700\n"
+"POT-Creation-Date: 2023-08-29 11:04+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,36 +17,93 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: .\locallibrary\catalog\models.py:7
+
+#: .\locallibrary\catalog\models.py:8
 msgid "Enter a book genre (e.g.Science Fiction)"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:19
+#: .\locallibrary\catalog\models.py:18
 msgid "Enter a brief description of the book"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:21
+#: .\locallibrary\catalog\models.py:20
 msgid "Select a genre for this book"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:46
+#: .\locallibrary\catalog\models.py:45
 msgid "Book availability"
 msgstr ""
 
-#: .\locallibrary\catalog\templates\base_generic.html:6
+#: .\locallibrary\catalog\templates\base_generic.html:7
 msgid "Local Library"
 msgstr ""
 
-#: .\locallibrary\catalog\templates\base_generic.html:21
+#: .\locallibrary\catalog\templates\base_generic.html:25
 msgid "Home"
 msgstr ""
 
-#: .\locallibrary\catalog\templates\base_generic.html:22
+#: .\locallibrary\catalog\templates\base_generic.html:26
 msgid "All books"
 msgstr ""
 
-#: .\locallibrary\catalog\templates\base_generic.html:23
+#: .\locallibrary\catalog\templates\base_generic.html:27
 msgid "All authors"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\author_detail.html:6
+#: .\locallibrary\catalog\templates\catalog\author_list.html:7
+msgid "Name:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\author_detail.html:9
+#: .\locallibrary\catalog\templates\catalog\author_list.html:10
+msgid "Birth:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\author_detail.html:11
+#: .\locallibrary\catalog\templates\catalog\author_list.html:12
+msgid "Death:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\author_detail.html:14
+#: .\locallibrary\catalog\templates\catalog\author_list.html:15
+msgid "List Books"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:7
+msgid "Author:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:10
+msgid "Summary:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:12
+msgid "Language:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:13
+msgid "Genre:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:16
+msgid "Copies"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:24
+msgid "Due to be returned:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:26
+msgid "Imprint:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_list.html:6
+msgid "Book List"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_list.html:16
+msgid "There are no books in the library."
 msgstr ""
 
 #: .\locallibrary\catalog\templates\index.html:5

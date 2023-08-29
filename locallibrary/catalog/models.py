@@ -1,4 +1,5 @@
 from django.utils.translation import gettext
+from django.urls import reverse # Used to generate URLs by reversing the URL patterns
 from django.db import models
 
 # Create your models here.
@@ -9,8 +10,6 @@ class Genre(models.Model):
     def __str__(self):
         """String for representing the Model object."""
         return self.name
-
-from django.urls import reverse # Used to generate URLs by reversing the URL patterns
 
 class Book(models.Model):
     """Model representing a book (but not a specific copy of a book)."""
@@ -65,6 +64,10 @@ class Author(models.Model):
     def get_absolute_url(self):
         """Returns the url to access a particular author instance."""
         return reverse('author-detail', args=[str(self.id)])
+    
+    def get_books(self):
+        """Returns the books of a particular author instance."""
+        return Book.objects.filter(author=self)
     
     def __str__(self):
         """String for representing the Model object."""

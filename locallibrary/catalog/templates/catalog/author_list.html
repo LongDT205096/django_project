@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+{% load i18n %}
+
+{% block content %}
+    <br>
+    <p>
+        <strong>{% translate "Name:" %}</strong> 
+        <a href="">{{ author.first_name }} {{ author.last_name }}</a>
+    </p>
+    <p><strong>{% translate "Birth:" %}</strong> {{ author.date_of_birth }}</p>
+    {% if author.date_of_death %}
+        <p><strong>{% translate "Death:" %}</strong> {{ author.date_of_death }}</p>
+    {% endif %}
+    <div>
+        <h4>{% translate "List Books" %}</h4>
+        {% for copy in author.get_list_books %}
+            <hr>
+            <p><a href="">{{ copy.title }}</a> ({{ copy.summary }})</p>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block content %}
-<h1>Title: {{ book.title }}</h1>
+    <h1>{% translate "Title:" %} {{ book.title }}</h1>
     <p>
         <strong>{% translate "Author:" %}</strong>
         <a href="">{{ book.author }}</a>
@@ -20,9 +20,9 @@
                 class="{% if copy.status == 'a' %}text-success{% elif copy.status == 'm'%}text-danger{% else %}text-warning{% endif %}">
                 {{ copy.get_status_display }}
             </p>
-            {% if copy.status != 'a' %}
-                <p><strong>{% translate "Due to be returned:" %}</strong> {{ copy.due_back }}</p>
-            {% endif %}
+        {% if copy.status != 'a' %}
+            <p><strong>{% translate "Due to be returned:" %}</strong> {{ copy.due_back }}</p>
+        {% endif %}
             <p><strong>{% translate "Imprint:" %}</strong> {{ copy.imprint }}</p>
             <p class="text-muted"><strong>Id:</strong> {{ copy.id }}</p>
         {% endfor %}

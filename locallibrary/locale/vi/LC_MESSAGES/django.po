@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-29 11:04+0700\n"
+"POT-Creation-Date: 2023-08-31 09:48+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,36 +18,52 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: .\locallibrary\catalog\models.py:8
+#: .\locallibrary\catalog\forms.py:15
+msgid "Invalid date - renewal in past"
+msgstr ""
+
+#: .\locallibrary\catalog\forms.py:19
+msgid "Invalid date - renewal more than 4 weeks ahead"
+msgstr ""
+
+#: .\locallibrary\catalog\models.py:10
 msgid "Enter a book genre (e.g.Science Fiction)"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:18
+#: .\locallibrary\catalog\models.py:20
 msgid "Enter a brief description of the book"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:20
+#: .\locallibrary\catalog\models.py:22
 msgid "Select a genre for this book"
 msgstr ""
 
-#: .\locallibrary\catalog\models.py:45
+#: .\locallibrary\catalog\models.py:47
 msgid "Book availability"
 msgstr ""
 
-#: .\locallibrary\catalog\templates\base_generic.html:7
+#: .\locallibrary\catalog\templates\base_generic.html:6
 msgid "Local Library"
 msgstr ""
 
-#: .\locallibrary\catalog\templates\base_generic.html:25
+#: .\locallibrary\catalog\templates\base_generic.html:24
 msgid "Home"
 msgstr ""
 
-#: .\locallibrary\catalog\templates\base_generic.html:26
+#: .\locallibrary\catalog\templates\base_generic.html:25
 msgid "All books"
 msgstr ""
 
-#: .\locallibrary\catalog\templates\base_generic.html:27
+#: .\locallibrary\catalog\templates\base_generic.html:26
 msgid "All authors"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\author_confirm_delete.html:5
+msgid "Delete Author"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\author_confirm_delete.html:6
+msgid "Are you sure you want to delete the author:"
 msgstr ""
 
 #: .\locallibrary\catalog\templates\catalog\author_detail.html:6
@@ -68,6 +84,10 @@ msgstr ""
 #: .\locallibrary\catalog\templates\catalog\author_detail.html:14
 #: .\locallibrary\catalog\templates\catalog\author_list.html:15
 msgid "List Books"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_detail.html:5
+msgid "Title:"
 msgstr ""
 
 #: .\locallibrary\catalog\templates\catalog\book_detail.html:7
@@ -98,12 +118,32 @@ msgstr ""
 msgid "Imprint:"
 msgstr ""
 
-#: .\locallibrary\catalog\templates\catalog\book_list.html:6
+#: .\locallibrary\catalog\templates\catalog\book_list.html:5
 msgid "Book List"
 msgstr ""
 
-#: .\locallibrary\catalog\templates\catalog\book_list.html:16
+#: .\locallibrary\catalog\templates\catalog\book_list.html:15
 msgid "There are no books in the library."
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_renew_librarian.html:5
+msgid "Renew:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_renew_librarian.html:6
+msgid "Borrower:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\book_renew_librarian.html:7
+msgid "Due date:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\bookinstance_list_borrowed_user.html:5
+msgid "Borrowed books"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\catalog\bookinstance_list_borrowed_user.html:15
+msgid "There are no books borrowed"
 msgstr ""
 
 #: .\locallibrary\catalog\templates\index.html:5
@@ -136,6 +176,68 @@ msgstr ""
 
 #: .\locallibrary\catalog\templates\index.html:13
 msgid "Authors:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\registration\logged_out.html:5
+msgid "Logged out!"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\registration\logged_out.html:6
+msgid "Click here to login again."
+msgstr ""
+
+#: .\locallibrary\catalog\templates\registration\login.html:6
+msgid "Your username and password didn't match. Please try again."
+msgstr ""
+
+#: .\locallibrary\catalog\templates\registration\login.html:11
+msgid ""
+"Your account doesn't have access to this page. To proceed,please login with "
+"an account that has access."
+msgstr ""
+
+#: .\locallibrary\catalog\templates\registration\login.html:13
+msgid "Please login to see this page."
+msgstr ""
+
+#: .\locallibrary\catalog\templates\registration\login.html:33
+msgid "Lost password?"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\registration\password_reset_confirm.html:6
+msgid "Please enter (and confirm) your new password."
+msgstr ""
+
+#: .\locallibrary\catalog\templates\registration\password_reset_confirm.html:9
+msgid "New password:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\registration\password_reset_confirm.html:13
+msgid "Confirm password:"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\registration\password_reset_confirm.html:23
+msgid "Password reset failed"
+msgstr ""
+
+#: .\locallibrary\catalog\templates\registration\password_reset_confirm.html:24
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.Please request a new password reset."
+msgstr ""
+
+#: .\locallibrary\catalog\templates\registration\password_reset_done.html:5
+msgid ""
+"We've emailed you instructions for setting your password. If they haven't "
+"arrived ina few minutes, check your spam folder."
+msgstr ""
+
+#: .\locallibrary\catalog\templates\registration\password_reset_email.html:3
+msgid "Someone asked for password reset for email "
+msgstr ""
+
+#: .\locallibrary\catalog\templates\registration\password_reset_email.html:3
+msgid "Follow the link below:"
 msgstr ""
 
 #: .\locallibrary\locallibrary\settings.py:119
